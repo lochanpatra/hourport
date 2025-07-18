@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px; /* space for fixed header */
+  padding-bottom: 60px; /* space for fixed footer */
+  min-height: 100vh;
+}
+/* Show nav links horizontally on desktop */
+.nav-links {
+  display: flex;
+}
+
+/* Hide hamburger button on desktop */
+.hamburger {
+  display: none;
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid #333;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+}

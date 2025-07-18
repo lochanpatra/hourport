@@ -1,0 +1,8 @@
+.container {
+  padding: 2rem;
+}
+
+.container a {
+  color: #0077cc;
+  text-decoration: underline;
+}

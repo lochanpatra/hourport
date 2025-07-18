@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0850c25808a7353d3495719cce50849b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0850c25808a7353d3495719cce50849b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0850c25808a7353d3495719cce50849b = L.map(
+                "map_0850c25808a7353d3495719cce50849b",
+                {
+                    center: [38.33142230676175, 80.97921404609352],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_027c9ba461cf00cfec95451c13f34e08 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri Satellite",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_027c9ba461cf00cfec95451c13f34e08.addTo(map_0850c25808a7353d3495719cce50849b);
+        
+    
+            var poly_line_180760b704f18d00d11fb30cb82271bd = L.polyline(
+                [[21.0012319, 71.636816], [21.0801417, 71.7691049], [21.0012319, 71.636816], [21.0012319, 71.636816], [20.9854955, 70.8114771], [20.789213, 70.8701242], [23.0227733, 71.2287949], [22.2685243, 69.3751983], [22.2821235, 69.366257], [22.1294267, 69.3879186], [38.40189565443, 66.46215488888], [42.62616097547, 70.72445918873], [42.5558747, 70.661196], [42.5558747, 70.661196], [42.5764389, 70.6608744], [44.3438427, 77.9338153], [49.0932972, 88.5103793], [50.06299569494, 88.45029169081], [50.0139202, 88.6506796], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.06299569494, 88.45029169081], [50.06299569494, 88.45029169081], [49.9961477, 88.66194], [49.9278705, 88.5978881], [50.06299569494, 88.45029169081], [50.019490251, 88.60112514027], [49.9278705, 88.5978881], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.0139202, 88.6506796], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.06299569494, 88.45029169081], [50.06299569494, 88.45029169081], [50.0139202, 88.6506796], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.0139202, 88.6506796], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.06299569494, 88.45029169081], [50.06299569494, 88.45029169081], [50.06299569494, 88.45029169081], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [50.06299569494, 88.45029169081], [50.019490251, 88.60112514027], [49.996777663, 88.61159350439], [50.019490251, 88.60112514027], [50.019490251, 88.60112514027], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.612754, 92.88343], [43.612754, 92.88343], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [43.72697114714, 91.71768094223], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [28.25755428669, 73.31308302125], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.54975433353, 73.78254644617], [28.25755428669, 73.31308302125], [27.85584021215, 73.25131601284], [27.85584021215, 73.25131601284], [27.85584021215, 73.25131601284], [28.23374962474, 73.2420640712], [28.23374962474, 73.2420640712]],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0850c25808a7353d3495719cce50849b);
+        
+    
+        var popup_0a2e39fb754c9b1457403721ee34e20e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e670a619fdf5e4cf3ec24708d364659 = $(`<div id="html_7e670a619fdf5e4cf3ec24708d364659" style="width: 100.0%; height: 100.0%;">Anthropoides virgo (2022)</div>`)[0];
+                popup_0a2e39fb754c9b1457403721ee34e20e.setContent(html_7e670a619fdf5e4cf3ec24708d364659);
+            
+        
+
+        poly_line_180760b704f18d00d11fb30cb82271bd.bindPopup(popup_0a2e39fb754c9b1457403721ee34e20e)
+        ;
+
+        
+    
+    
+            var marker_2352b0df40531e344861137a7e35785b = L.marker(
+                [21.0012319, 71.636816],
+                {
+}
+            ).addTo(map_0850c25808a7353d3495719cce50849b);
+        
+    
+            var icon_b0e88026e7d50f333240b86912e603ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad444e47c0a406552ac306f15f49c6a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5ff961756a0ca8bfd426ee743cc256e = $(`<div id="html_e5ff961756a0ca8bfd426ee743cc256e" style="width: 100.0%; height: 100.0%;">Start - Anthropoides virgo</div>`)[0];
+                popup_ad444e47c0a406552ac306f15f49c6a0.setContent(html_e5ff961756a0ca8bfd426ee743cc256e);
+            
+        
+
+        marker_2352b0df40531e344861137a7e35785b.bindPopup(popup_ad444e47c0a406552ac306f15f49c6a0)
+        ;
+
+        
+    
+    
+                marker_2352b0df40531e344861137a7e35785b.setIcon(icon_b0e88026e7d50f333240b86912e603ad);
+            
+    
+            var marker_288be14daf45ed2174fd843a7a84941c = L.marker(
+                [28.23374962474, 73.2420640712],
+                {
+}
+            ).addTo(map_0850c25808a7353d3495719cce50849b);
+        
+    
+            var icon_6bd1d52e3067d2a7e6cca8e442658d15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91f9bbcc807158bee02a7482f74aec40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b52b40e601a9e31d3166f5b7f80b03f7 = $(`<div id="html_b52b40e601a9e31d3166f5b7f80b03f7" style="width: 100.0%; height: 100.0%;">End - Anthropoides virgo</div>`)[0];
+                popup_91f9bbcc807158bee02a7482f74aec40.setContent(html_b52b40e601a9e31d3166f5b7f80b03f7);
+            
+        
+
+        marker_288be14daf45ed2174fd843a7a84941c.bindPopup(popup_91f9bbcc807158bee02a7482f74aec40)
+        ;
+
+        
+    
+    
+                marker_288be14daf45ed2174fd843a7a84941c.setIcon(icon_6bd1d52e3067d2a7e6cca8e442658d15);
+            
+</script>
+</html>
