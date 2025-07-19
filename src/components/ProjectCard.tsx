@@ -282,7 +282,7 @@ interface Props {
   title: string;
   description: string;
   image: string;
-  link?: string; // No longer used here, but kept if needed elsewhere
+  link?: string; 
   github?: string;
   webLink?: string;
 }
@@ -314,7 +314,7 @@ const ProjectCard = ({ title, description, image, github, webLink }: Props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Live Demo
+              Live 
             </a>
           )}
         </div>
