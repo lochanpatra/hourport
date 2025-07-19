@@ -12,10 +12,10 @@ type BadgeItem = {
 
 const Skills = () => {
   const technicalSkills: TechnicalSkill[] = [
-    { skill: "Remote Sensing & Geospatial Analysis", level: 85 },
-    { skill: "Web Development", level: 75 },
-    { skill: "Data Analysis (Python, R)", level: 90 },
-    { skill: "AI / Machine Learning", level: 80 },
+   { skill: "Remote Sensing & Geospatial Analysis", level: 85 },
+    { skill: "GIS Web Development", level: 60 },
+    { skill: "Data Analysis (Python)", level: 80 },
+    { skill: "AI / Machine Learning", level: 60 },
   ];
 
   const languages: BadgeItem[] = [
@@ -27,7 +27,24 @@ const Skills = () => {
   ];
 
   const frameworks: BadgeItem[] = [
-    { name: "React", badgeClass: "bg-info text-dark" },
+   { name: "React", badgeClass: "bg-info text-dark" },
+    { name: "Flask", badgeClass: "bg-info text-dark" },
+    { name: "Bootstrap", badgeClass: "bg-info text-dark" },
+    { name: "Django", badgeClass: "bg-info text-dark" },
+    { name: "Pandas", badgeClass: "bg-secondary" },
+     { name: "Geopandas", badgeClass: "bg-secondary" },
+      { name: "Rasterio", badgeClass: "bg-secondary" },
+       { name: "Pytorch", badgeClass: "bg-secondary" },
+        { name: "Keras", badgeClass: "bg-secondary" },
+         { name: "Tensorflow", badgeClass: "bg-secondary" },
+          { name: "Matplotlib", badgeClass: "bg-secondary" },
+           { name: "Scikit-learn", badgeClass: "bg-secondary" },
+            { name: "Seaborn", badgeClass: "bg-secondary" },
+             { name: "XGBoost", badgeClass: "bg-secondary" },
+              { name: "Turf.js", badgeClass: "bg-secondary" },
+              { name: "Leaflet.js", badgeClass: "bg-secondary" },
+               { name: "Folium", badgeClass: "bg-secondary" },
+                { name: "Osmnx", badgeClass: "bg-secondary" }, { name: "React", badgeClass: "bg-info text-dark" },
     { name: "Node.js", badgeClass: "bg-dark" },
     { name: "Bootstrap", badgeClass: "bg-primary" },
     { name: "Express.js", badgeClass: "bg-secondary" },
@@ -35,11 +52,15 @@ const Skills = () => {
   ];
 
   const tools: BadgeItem[] = [
-    { name: "Leaflet", badgeClass: "bg-dark" },
+        { name: "QGIS , ArcGIS", badgeClass: "bg-secondary" },
     { name: "Google Earth Engine", badgeClass: "bg-secondary" },
-    { name: "QGIS", badgeClass: "bg-success" },
+    { name: "Google Colab", badgeClass: "bg-success" },
     { name: "Git & GitHub", badgeClass: "bg-warning text-dark" },
+    { name: "VS Code", badgeClass: "bg-success" },
     { name: "PostgreSQL", badgeClass: "bg-danger" },
+    { name: "GeoServer", badgeClass: "bg-danger" },
+    { name: "Streamlit", badgeClass: "bg-success" },
+    { name: "PySpark", badgeClass: "bg-success" },
   ];
 
   const renderBadgeList = (items: BadgeItem[]) => (
