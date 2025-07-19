@@ -20,7 +20,7 @@ const Skills = () => {
 
   const languages: BadgeItem[] = [
     { name: "Python", badgeClass: "bg-primary" },
-    { name: "R", badgeClass: "bg-secondary" },
+    // { name: "R", badgeClass: "bg-secondary" },
     { name: "JavaScript", badgeClass: "bg-success" },
     { name: "HTML5", badgeClass: "bg-warning text-dark" },
     { name: "CSS3", badgeClass: "bg-danger" },
@@ -45,18 +45,15 @@ const Skills = () => {
               { name: "Leaflet.js", badgeClass: "bg-secondary" },
                { name: "Folium", badgeClass: "bg-secondary" },
                 { name: "Osmnx", badgeClass: "bg-secondary" }, { name: "React", badgeClass: "bg-info text-dark" },
-    { name: "Node.js", badgeClass: "bg-dark" },
-    { name: "Bootstrap", badgeClass: "bg-primary" },
-    { name: "Express.js", badgeClass: "bg-secondary" },
-    { name: "Shiny (R)", badgeClass: "bg-success" },
+  
   ];
 
   const tools: BadgeItem[] = [
-        { name: "QGIS , ArcGIS", badgeClass: "bg-secondary" },
+     { name: "QGIS , ArcGIS", badgeClass: "bg-secondary" },
     { name: "Google Earth Engine", badgeClass: "bg-secondary" },
     { name: "Google Colab", badgeClass: "bg-success" },
+     { name: "VS Code", badgeClass: "bg-success" },
     { name: "Git & GitHub", badgeClass: "bg-warning text-dark" },
-    { name: "VS Code", badgeClass: "bg-success" },
     { name: "PostgreSQL", badgeClass: "bg-danger" },
     { name: "GeoServer", badgeClass: "bg-danger" },
     { name: "Streamlit", badgeClass: "bg-success" },
