@@ -1,14 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+type TechnicalSkill = {
+  skill: string;
+  level: number;
+};
+
+type BadgeItem = {
+  name: string;
+  badgeClass: string;
+};
+
 const Skills = () => {
-  const technicalSkills = [
+  const technicalSkills: TechnicalSkill[] = [
     { skill: "Remote Sensing & Geospatial Analysis", level: 85 },
     { skill: "Web Development", level: 75 },
     { skill: "Data Analysis (Python, R)", level: 90 },
     { skill: "AI / Machine Learning", level: 80 },
   ];
 
-  const languages = [
+  const languages: BadgeItem[] = [
     { name: "Python", badgeClass: "bg-primary" },
     { name: "R", badgeClass: "bg-secondary" },
     { name: "JavaScript", badgeClass: "bg-success" },
@@ -16,7 +26,7 @@ const Skills = () => {
     { name: "CSS3", badgeClass: "bg-danger" },
   ];
 
-  const frameworks = [
+  const frameworks: BadgeItem[] = [
     { name: "React", badgeClass: "bg-info text-dark" },
     { name: "Node.js", badgeClass: "bg-dark" },
     { name: "Bootstrap", badgeClass: "bg-primary" },
@@ -24,7 +34,7 @@ const Skills = () => {
     { name: "Shiny (R)", badgeClass: "bg-success" },
   ];
 
-  const tools = [
+  const tools: BadgeItem[] = [
     { name: "Leaflet", badgeClass: "bg-dark" },
     { name: "Google Earth Engine", badgeClass: "bg-secondary" },
     { name: "QGIS", badgeClass: "bg-success" },
@@ -32,7 +42,7 @@ const Skills = () => {
     { name: "PostgreSQL", badgeClass: "bg-danger" },
   ];
 
-  const renderBadgeList = (items) => (
+  const renderBadgeList = (items: BadgeItem[]) => (
     <div className="d-flex flex-wrap gap-2">
       {items.map(({ name, badgeClass }) => (
         <span key={name} className={`badge ${badgeClass} p-2`}>
@@ -121,3 +131,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
