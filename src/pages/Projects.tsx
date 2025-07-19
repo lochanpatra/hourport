@@ -133,11 +133,12 @@ const Projects = () => {
       <h1 className={styles.heading}>Projects</h1>
       <div className={styles.list}>
         <ProjectCard
-          title="MERN App"
-          description="A full-stack MERN application with authentication and CRUD features. Built using MongoDB, Express, React, and Node.js."
-          image="https://via.placeholder.com/600x300.png?text=MERN+App"
-          link="https://github.com/yourusername/mern-app"
-        />
+  title="AI Image Classifier"
+  description="A CNN-based image classifier using TensorFlow."
+  image="/assets/classifier.png"
+  link="https://ai-classifier-demo.vercel.app"
+  github="https://github.com/yourusername/ai-image-classifier"
+/>
         <ProjectCard
           title="React Dashboard"
           description="A modern dashboard app built with React and TypeScript. Includes charts, authentication, and responsive design."
