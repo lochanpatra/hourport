@@ -169,10 +169,11 @@ interface Props {
   description: string;
   image: string;
   link: string;
-  github?: string; // 👈 Optional GitHub link
+  github?: string;
+  webLink?: string; // ✅ Add webLink to props
 }
 
-const ProjectCard = ({ title, description, image, link, github }: Props) => {
+const ProjectCard = ({ title, description, image, link, github, webLink }: Props) => {
   const modalId = title.toLowerCase().replace(/\s+/g, '-') + '-modal';
 
   return (
@@ -226,6 +227,19 @@ const ProjectCard = ({ title, description, image, link, github }: Props) => {
               >
                 Visit Project
               </a>
+
+              {/* ✅ Render webLink button if provided */}
+              {webLink && (
+                <a
+                  href={webLink}
+                  className="btn btn-success"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              )}
+
               {github && (
                 <a
                   href={github}
@@ -236,7 +250,12 @@ const ProjectCard = ({ title, description, image, link, github }: Props) => {
                   <i className="fab fa-github me-1"></i> GitHub
                 </a>
               )}
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
                 Close
               </button>
             </div>
@@ -248,4 +267,5 @@ const ProjectCard = ({ title, description, image, link, github }: Props) => {
 };
 
 export default ProjectCard;
+
 
