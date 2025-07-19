@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import styles from './ProjectCard.module.css';
 
 interface Props {
@@ -9,7 +9,6 @@ interface Props {
 }
 
 const ProjectCard = ({ title, description, image, link }: Props) => {
-  const [show, setShow] = useState(false);
   const modalId = title.toLowerCase().replace(/\s+/g, '-') + '-modal';
 
   return (
