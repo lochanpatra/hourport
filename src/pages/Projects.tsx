@@ -139,17 +139,47 @@ const Projects = () => {
         link="https://ai-classifier-demo.vercel.app"
         github="https://github.com/yourusername/ai-image-classifier"
         />
-        <ProjectCard
-          title="React Dashboard"
-          description="A modern dashboard app built with React and TypeScript. Includes charts, authentication, and responsive design."
-          image="https://via.placeholder.com/600x300.png?text=Dashboard+App"
-          link="https://github.com/yourusername/react-dashboard"
+       <ProjectCard
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
         />
         <ProjectCard
-          title="GIS Web App"
-          description="Map-based analytics tool using Leaflet for rendering maps and Python Flask backend for spatial data processing."
-          image="https://via.placeholder.com/600x300.png?text=GIS+App"
-          link="https://github.com/yourusername/gis-webapp"
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
+        />
+        <ProjectCard
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
+        />
+        <ProjectCard
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
+        />
+        <ProjectCard
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
+        />
+        <ProjectCard
+        title="AI Image Classifier"
+        description="A CNN-based image classifier using TensorFlow."
+        image="/assets/classifier.png"
+        link="https://ai-classifier-demo.vercel.app"
+        github="https://github.com/yourusername/ai-image-classifier"
         />
       </div>
     </section>
