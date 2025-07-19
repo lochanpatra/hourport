@@ -241,6 +241,12 @@ const Projects = () => {
           image="/aqi.png"
           webLink="https://agridashbord.netlify.app/"
         />
+        <ProjectCard
+          title="Portfolio"
+          description="A portfolio app using react vite tyscripts."
+          image="/aqi5.png"
+          webLink="https://patralochan.netlify.app/"
+        />
       </div>
     </section>
   );
