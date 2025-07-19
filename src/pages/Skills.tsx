@@ -44,7 +44,7 @@ const Skills = () => {
               { name: "Turf.js", badgeClass: "bg-secondary" },
               { name: "Leaflet.js", badgeClass: "bg-secondary" },
                { name: "Folium", badgeClass: "bg-secondary" },
-                { name: "Osmnx", badgeClass: "bg-secondary" }, { name: "React", badgeClass: "bg-info text-dark" },
+                { name: "Osmnx", badgeClass: "bg-secondary" }, 
   
   ];
 
