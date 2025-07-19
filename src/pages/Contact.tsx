@@ -1,15 +1,3 @@
-import styles from './Contact.module.css';
-
-// const Contact = () => {
-//   return (
-//     <section className={styles.container}>
-//       <h1>Contact</h1>
-//       <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-//     </section>
-//   );
-// };
-
-// export default Contact;
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
