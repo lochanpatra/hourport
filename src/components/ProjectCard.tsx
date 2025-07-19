@@ -168,9 +168,9 @@ interface Props {
   title: string;
   description: string;
   image: string;
-  link: string;
+  link?: string; // 👈 Make this optional
   github?: string;
-  webLink?: string; // ✅ Add webLink to props
+  webLink?: string;
 }
 
 const ProjectCard = ({ title, description, image, link, github, webLink }: Props) => {
@@ -218,47 +218,52 @@ const ProjectCard = ({ title, description, image, link, github, webLink }: Props
               <img src={image} alt={title} className="img-fluid rounded mb-3" />
               <p>{description}</p>
             </div>
-            <div className="modal-footer">
-              <a
-                href={link}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Project
-              </a>
 
-              {/* ✅ Render webLink button if provided */}
-              {webLink && (
-                <a
-                  href={webLink}
-                  className="btn btn-success"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Demo
-                </a>
-              )}
+             <div className="modal-footer">
+  {link && (
+    <a
+      href={link}
+      className="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Visit Project
+    </a>
+  )}
 
-              {github && (
-                <a
-                  href={github}
-                  className="btn btn-outline-dark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github me-1"></i> GitHub
-                </a>
-              )}
+  {webLink && (
+    <a
+      href={webLink}
+      className="btn btn-success"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Live Demo
+    </a>
+  )}
 
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+  {github && (
+    <a
+      href={github}
+      className="btn btn-outline-dark"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-github me-1"></i> GitHub
+    </a>
+  )}
+
+  <button
+    type="button"
+    className="btn btn-secondary"
+    data-bs-dismiss="modal"
+  >
+    Close
+  </button>
+</div>
+ 
+
+            
           </div>
         </div>
       </div>
