@@ -1,27 +1,3 @@
-// const About = () => (
-//   <div>
-//     <h2>About Me</h2>
-//     <p>This is the About section of the portfolio.</p>
-//   </div>
-// );
-
-// export default About;
-
-
-// import styles from './About.module.css';
-
-// const About = () => {
-//   return (
-//     <section className={styles.container}>
-//       <h1>About Me</h1>
-//       <p>I'm a web developer passionate about building performant and user-friendly applications.</p>
-//     </section>
-//   );
-// };
-
-// export default About;
-
-
 import { Typewriter } from 'react-simple-typewriter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
