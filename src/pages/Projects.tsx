@@ -133,53 +133,53 @@ const Projects = () => {
       <h1 className={styles.heading}>Projects</h1>
       <div className={styles.list}>
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="NYC Yellow Taxi Trip Analysis Dashboard"
+          description="A scalable dashboard that leverages PySpark to analyze NYC Yellow Taxi trip data for trends in trip volume, fare amounts, and more."
+          image="/images/nyc.png"
+          link="https://github.com/lochanpatra/bigdata"
+         webLink="https://lochannyctrip.streamlit.app/"
         />
        <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="Air Quality Prediction Dashboard"
+          description="An interactive Streamlit web app that visualizes air quality data and predicts the Air Quality Index (AQI) using a trained XGBoost model."
+          image="/images/aqi1.png"
+          link="https://github.com/lochanpatra/Air_Quality_Vis"
+           webLink="https://lochanairquality.streamlit.app/"
         />
+
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="U-Net for Road Segmentation in Mumbai using PyTorch"
+          description="U-Net architecture in PyTorch for semantic segmentation of roads from satellite imagery."
+          image="/images/mumbai.png"
+          link="https://github.com/lochanpatra/U-Net_pytorch"
         />
+
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="Canberra Zoning Compliance Checker"
+          description="A Streamlit app using OpenAI GPT-4 Vision to analyze architectural site plans and verify zoning compliance."
+          image="/images/showcase1.png"
+          link="https://github.com/lochanpatra/zonal-compliance-checker"
         />
+
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="GeoIntel-AI: GIS + OpenAI Spatial Analysis App"
+          description="Interactive app combining GIS analysis with GPT-4 summaries. Users upload shapefiles and get analysis + natural language descriptions."
+          image="/images/showcase1.png"
+          link="https://github.com/lochanpatra/OpenAI-Spatial-Analysis-"
         />
+
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="Real Estate Analyzer"
+          description="A Streamlit app that scores property images, forecasts prices using Prophet, and visualizes comps."
+          image="/images/aqi.png"
+          link="https://github.com/lochanpatra/real_estate_analyzer"
         />
+
         <ProjectCard
-        title="AI Image Classifier"
-        description="A CNN-based image classifier using TensorFlow."
-        image="/assets/classifier.png"
-        link="https://ai-classifier-demo.vercel.app"
-        github="https://github.com/yourusername/ai-image-classifier"
+          title="Agridashboard"
+          description="A web app using Open Meteo API to forecast temperature, humidity, and rainfall over 12 hours."
+          image="/images/aqi.png"
+          webLink="https://agridashbord.netlify.app/"
         />
       </div>
     </section>
