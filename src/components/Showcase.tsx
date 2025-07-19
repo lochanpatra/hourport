@@ -3,22 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Showcase = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "Static website created with HTML, CSS, and JS.",
+      title: "Bird Migration",
+      description: "Birds migration visualisation  with animation created with folium,python.",
       image: "/images/project1.png",
       htmlFile: "/project1.html",
     },
     {
-      title: "Project Two",
-      description: "Interactive dashboard with Chart.js.",
+     title: "Bird Migration-2",
+      description: "Birds migration visualisation created with folium,python",
       image: "/images/project2.png",
       htmlFile: "/project2.html",
     },
     {
-      title: "Project Three",
-      description: "Map app using Leaflet and local JSON.",
+      title: "odisha_land_cover_report",
+      description: "odisha_land_cover_report.",
       image: "/images/project3.png",
-      htmlFile: "/project3.html",
+      htmlFile: "/odisha_land_cover_report.html",
     },
   ];
 
