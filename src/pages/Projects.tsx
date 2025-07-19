@@ -247,6 +247,13 @@ const Projects = () => {
           image="/aqi5.png"
           webLink="https://patralochan.netlify.app/"
         />
+          <ProjectCard
+          title="AI Writer with Streamlit"
+          description="A simple AI writing assistant built using Streamlit and mistralai/mistral-7b."
+          image="/aqi5.png"
+          github="https://github.com/lochanpatra/Aiwritter"
+          webLink="https://lochanaiwritter.streamlit.app/"
+        />
       </div>
     </section>
   );
